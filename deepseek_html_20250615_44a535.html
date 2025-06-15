@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoeo.ai | Ultra Premium AI Domain for Sale</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #0ea5e9;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #94a3b8;
+            --success: #10b981;
+            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+            --glass: rgba(255, 255, 255, 0.05);
+            --gold: #ffd700;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--light);
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(14, 165, 233, 0.1) 0%, transparent 20%);
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--glass);
+            transition: all 0.4s;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 28px;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--light);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .logo-icon::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255,255,255,0.2) 0%, transparent 70%);
+        }
+        
+        .logo-icon i {
+            font-size: 22px;
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            padding: 40px 0;
+        }
+        
+        .domain-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.3));
+            color: var(--gold);
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            backdrop-filter: blur(5px);
+            animation: pulse 2s infinite;
+        }
+        
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            color: var(--light);
+            margin-bottom: 25px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -1px;
+        }
+        
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--gold), #ffcc00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.4rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+        
+        .domain-value {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 8px 25px;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.2));
+            color: var(--gold);
+            border-radius: 30px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+        
+        /* Domain Description */
+        .description {
+            background: rgba(15, 23, 42, 0.7);
+            border-radius: 25px;
+            padding: 80px 0;
+            margin: 80px 0;
+            border: 1px solid var(--glass);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .description::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+            z-index: -1;
+            animation: pulse 8s infinite alternate;
+        }
+        
+        .description-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .description h2 {
+            font-size: 2.8rem;
+            color: var(--light);
+            margin-bottom: 40px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .description p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-bottom: 30px;
+            line-height: 1.8;
+            text-align: left;
+        }
+        
+        .domain-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+        
+        .highlight-card {
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            border: 1px solid var(--glass);
+            transition: all 0.3s;
+        }
+        
+        .highlight-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+        
+        .highlight-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--gold), #ffcc00);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 28px;
+            color: var(--dark);
+        }
+        
+        .highlight-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--light);
+        }
+        
+        .highlight-card p {
+            text-align: center;
+            font-size: 1rem;
+            color: var(--gray);
+        }
+        
+        /* Offer Form Section */
+        .offer-section {
+            background: rgba(15, 23, 42, 0.7);
+            border-radius: 25px;
+            padding: 80px 0;
+            margin: 80px 0;
+            border: 1px solid var(--glass);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .offer-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+            z-index: -1;
+            animation: pulse 8s infinite alternate;
+        }
+        
+        .offer-container {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .offer-container h2 {
+            font-size: 2.8rem;
+            color: var(--light);
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .offer-container p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-size: 1.2rem;
+        }
+        
+        .offer-form {
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: var(--light);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(15, 23, 42, 0.5);
+            color: var(--light);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--gray);
+        }
+        
+        .offer-amount {
+            position: relative;
+        }
+        
+        .offer-amount input {
+            padding-left: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .currency-symbol {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gold);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        
+        .submit-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold), #ffcc00);
+            color: var(--dark);
+            padding: 16px 45px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .submit-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.6);
+        }
+        
+        .secure-notice {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 60px 0 30px;
+            text-align: center;
+            color: var(--gray);
+            border-top: 1px solid var(--glass);
+        }
+        
+        .footer-logo {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            display: inline-block;
+            color: var(--light);
+        }
+        
+        .copyright {
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+        
+        /* Animations */
+        @keyframes pulse {
+            0% { 
+                transform: scale(0.98);
+                box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.3);
+            }
+            70% { 
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgba(255, 215, 0, 0);
+            }
+            100% { 
+                transform: scale(0.98);
+                box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+            }
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0); }
+        }
+        
+        .floating {
+            animation: float 6s infinite ease-in-out;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .description h2 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .description h2 {
+                font-size: 2rem;
+            }
+            
+            .offer-form {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2.3rem;
+            }
+            
+            .logo {
+                font-size: 22px;
+            }
+            
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .domain-badge {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+            
+            .offer-container h2 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    Zoeo.ai
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="domain-badge floating">
+                    <i class="fas fa-certificate"></i> Ultra Premium Domain
+                </div>
+                <h1>Acquire the Exclusive <span>Zoeo.ai</span> Domain</h1>
+                <p>Zoeo.ai is a highly valuable domain name in the artificial intelligence space. Short, memorable, and brandable, this premium domain represents a unique opportunity to establish a powerful presence in the rapidly growing AI industry.</p>
+                
+                <div class="domain-value floating">
+                    <i class="fas fa-tag"></i> Valued at $100,000
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domain Description -->
+    <section class="description">
+        <div class="container">
+            <div class="description-content">
+                <h2>Why Zoeo.ai is an Exceptional Domain</h2>
+                
+                <p>Zoeo.ai is a five-letter .ai domain with exceptional branding potential. The name is short, pronounceable, and carries a modern, tech-savvy feel that perfectly aligns with artificial intelligence and cutting-edge technology.</p>
+                
+                <p>The .ai extension has become the gold standard for AI companies, startups, and innovators. Owning Zoeo.ai positions your brand at the forefront of the artificial intelligence revolution and gives instant credibility in this competitive space.</p>
+                
+                <div class="domain-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Brand Power</h3>
+                        <p>Short, memorable name perfect for AI products and services</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Global Appeal</h3>
+                        <p>Works across cultures and languages with universal recognition</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Investment Value</h3>
+                        <p>.ai domains have shown consistent appreciation over time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Form Section -->
+    <section class="offer-section">
+        <div class="container">
+            <div class="offer-container">
+                <h2>Submit Your Offer</h2>
+                <p>We are considering serious offers for this premium domain. Submit your proposal today:</p>
+                
+                <form class="offer-form" id="offerForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group offer-amount">
+                        <label for="offer">Your Offer Price (USD)</label>
+                        <div class="currency-symbol">$</div>
+                        <input type="number" id="offer" placeholder="Enter your offer amount" min="10000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Information (Optional)</label>
+                        <textarea id="message" rows="4" placeholder="Tell us about your intended use for this domain"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        Submit Offer <i class="fas fa-arrow-right"></i>
+                    </button>
+                    
+                    <div class="secure-notice">
+                        <i class="fas fa-lock"></i> Your information is secure and will not be shared
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                Zoeo.ai
+            </div>
+            <div class="copyright">
+                &copy; 2023 Zoeo.ai Domain Sale. All rights reserved.<br>
+                This premium domain is listed for sale to qualified buyers.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.2)';
+                header.style.padding = '10px 0';
+            } else {
+                header.style.boxShadow = 'none';
+                header.style.padding = '20px 0';
+            }
+        });
+        
+        // Add floating animation to cards
+        document.querySelectorAll('.highlight-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.classList.add('floating');
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.classList.remove('floating');
+            });
+        });
+        
+        // Form submission handling
+        document.getElementById('offerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const offer = document.getElementById('offer').value;
+            const message = document.getElementById('message').value;
+            
+            // In a real implementation, you would send this data to your server
+            // For this example, we'll show a confirmation message
+            
+            // Show success message
+            alert(`Thank you, ${name}! Your offer of $${offer} has been submitted successfully. We will contact you at ${email} shortly.`);
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
